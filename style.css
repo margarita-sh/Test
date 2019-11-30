@@ -1,0 +1,568 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+         url('fonts/fontawesome-webfont.svg') format('svg'),
+         url('fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('fonts/fontawesome-webfont.woff') format('woff'),
+         url('fonts/fontawesome-webfont.woff2') format('woff2'), 
+         url('fonts/fontawesome-webfont.otf') format('opentype');
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    min-width:375px;
+    width:100%
+}
+.head-block {
+    background-image:url("images/b2.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+.hat-block__position-wrapper {
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items:center; 
+   padding:10px 20px; 
+}
+.main-container__submenu i{
+    color:white;
+    font-weight:bold;
+    font-size: 3em;
+}
+
+.main-container__nav {
+   display:none;
+}
+.logo__oblige{
+    color:white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-bottom:2px solid white;
+}
+.logo__charity-fund {
+   color:rgb(87, 206, 166);
+   font-size: 1em;
+}
+.main-container__list{
+   margin:0;
+   padding:0;
+   list-style-type: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color:white;
+}
+.nav__link:hover {
+    color:rgb(87, 206, 166);
+    transform: scale(1.2);
+}
+
+.main-container__list li{
+   display:inline;
+   margin-right:2em;
+ }
+.main-container__title {
+   color:white;
+   margin:0 0 0 20px;
+   font-size: 1.6em;
+}
+.main-container__header-h2 {
+    color:rgb(87, 206, 166);
+    font-size: 1em;
+    margin:0 0 0 20px;
+}
+.main-container__sentence {
+    color:gray;
+    font-size: 0.7em;
+    margin:0 0 10px 20px;
+    line-height:1;
+}
+.btn {
+    background: gray;
+    width:20%;
+    font-size: 0.6em;
+    color:white;
+    border:none;
+    padding: 0.4em;
+}
+.main-container__btn {
+    margin:0 0 40px 20px; 
+}
+.donation {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:0;
+    border-bottom:1px solid gray;
+}
+.donation__picture { 
+    width:50%;
+}
+.donation__picture img{ 
+    width:100%;
+    height: 100%;
+    padding:0;
+    margin:0;
+}
+
+.donation__block { 
+    width:50%;
+    background: rgb(228, 220, 220);
+}
+
+.donation__block h4 {
+    font-size:1em;
+    margin:20px 10px 10px 10px;
+    letter-spacing:0.1em;
+  
+}
+.donation__block p {
+   font-size:0.7em;
+   margin:0 10px 10px 10px;
+   color:rgb(136, 133, 133);
+}
+.button {
+    color:rgb(241, 227, 227);
+    background:rgb(87, 206, 166);
+    margin:0 0 0 10px ;
+    padding: 0.4em;
+    width:35%;
+    font-size:0.6em;
+    border:none;
+}
+
+@media (min-width:450px) and (max-width:500px){
+   
+    .donation__block h4 {
+        font-size:1.2em;
+    }
+    .donation__block p {
+       font-size:0.8em;
+    }
+    .button {
+        font-size:0.7em;
+    }
+
+}
+
+@media (min-width:500px) and (max-width:600px){
+   
+    .donation__block h4 {
+        font-size:1.2em;
+    }
+    .donation__block p {
+       font-size:0.9em;
+    }
+    .button {
+        font-size:0.8em;
+        margin:20px 0 0 10px;
+    }
+
+}
+
+@media (min-width:601px) and (max-width:700px){
+    .main-container__submenu i{
+        font-size: 4em;
+    }
+    .logo__oblige{
+        font-size: 2em;
+    }
+    .logo__charity-fund {
+        font-size: 1.1em;
+     }
+     .main-container__title {
+        font-size: 1.7em;
+     }
+     .main-container__header-h2 {
+         font-size: 1.2em;
+     }
+     .main-container__sentence {
+         font-size: 0.9em;
+         line-height:1.2;
+     }
+     .btn {
+         font-size: 0.8em;
+     }
+
+    .donation__block h4 {
+        font-size:1.3em;
+    }
+    .donation__block p {
+       font-size:1.1em;
+    }
+    .button {
+        font-size:0.9em;
+        margin:20px 0 0 10px;
+       
+    }
+
+}
+
+@media (min-width:701px) and (max-width:768px){
+    .main-container__submenu i{
+        font-size: 4.2em;
+    }
+    .logo__oblige{
+        font-size: 2.3em;
+    }
+    .logo__charity-fund {
+        font-size: 1.2em;
+     }
+     .main-container__title {
+        font-size: 1.9em;
+     }
+     .main-container__header-h2 {
+         font-size: 1.4em;
+     }
+     .main-container__sentence {
+         font-size: 1.1em;
+     }
+     .btn {
+         font-size: 0.9em;
+     }
+
+    .donation__block h4 {
+        font-size:1.5em;
+    }
+    .donation__block p {
+       font-size:1.3em;
+    }
+    .button {
+        font-size:1em;
+        margin:30px 0 0 10px;
+       
+    }
+
+
+}
+@media (min-width:769px) and (max-width:900px){
+    .main-container__submenu i{
+        display:none;
+    }
+    .main-container__nav{
+        display:block;
+    }
+    .logo__oblige{
+        font-size: 2em;
+    }
+    .logo__charity-fund {
+        font-size: 1.2em;
+     }
+     .main-container__title {
+        font-size: 1.9em;
+     }
+     .main-container__header-h2 {
+         font-size: 1.5em;
+     }
+     .main-container__sentence {
+         font-size: 1.2em;
+     }
+     .btn {
+         font-size: 1em;
+         margin:30px 0 70px 10px;
+     }
+
+    /*  .contribution__position-wrapper{
+        display:flex;
+     } */
+     .donation__block h4 {
+        font-size:1.1em;
+    }
+    .donation__block p {
+       font-size:0.7em;
+    }
+    .button {
+        font-size:0.8em;
+        margin:0 0 0 10px ;
+        padding: 0.4em;
+        width:40%;
+    }
+    .donation__block h4 {
+        font-size:1.5em;
+    }
+    .donation__block p {
+       font-size:1.3em;
+    }
+    .button {
+        font-size:1em;
+        margin:40px 0 0 10px;
+}
+}
+
+
+
+@media (min-width:901px) and (max-width:1100px){
+     .main-container__submenu i{
+        display:none;
+    } 
+    .main-container__nav{
+        display:block;
+    }
+    .logo__oblige{
+        font-size: 2em;
+    }
+    .logo__charity-fund {
+        font-size: 1.2em;
+     }
+     .main-container__title {
+        font-size: 2.4em;
+        margin:70px 0 0 60px;
+     }
+     .main-container__header-h2 {
+         font-size: 1.4em;
+         margin:0px 0 20px 60px;
+     }
+     .main-container__sentence {
+         font-size: 1.1em;
+         margin:0px 0 0 60px;
+     }
+     .btn {
+         font-size: 1.1em;
+         margin:30px 0 80px 60px;
+     }
+
+    .contribution__position-wrapper{
+        display:flex;
+    }
+   
+    .donation__block h4 {
+        font-size:1.4em;
+    }
+    .donation__block p {
+       font-size:0.8em;
+    }
+    .button {
+        font-size:1em;
+        margin:0 0 10px 10px;
+        width:45%;
+}
+
+}
+
+@media (min-width:1024px) and (max-width:1200px){
+    .main-container__submenu i{
+       display:none;
+   } 
+   .main-container__nav{
+       display:block;
+   }
+   .logo__oblige{
+       font-size: 2em;
+   }
+   .logo__charity-fund {
+       font-size: 1.2em;
+    }
+    .main-container__title {
+       font-size: 2.4em;
+       margin:70px 0 0 60px;
+    }
+    .main-container__header-h2 {
+        font-size: 1.4em;
+        margin:0px 0 20px 60px;
+    }
+    .main-container__sentence {
+        font-size: 1.1em;
+        margin:0px 0 0 60px;
+    }
+    .btn {
+        font-size: 1.1em;
+        margin:30px 0 80px 60px;
+    }
+
+   .contribution__position-wrapper{
+       display:flex;
+   }
+  
+   .donation__block h4 {
+       font-size:1.4em;
+   }
+   .donation__block p {
+      font-size:0.9em;
+   }
+   .button {
+       font-size:1em;
+       margin:0 0 10px 10px;
+       width:40%;
+}
+
+}
+
+
+@media (min-width:1201px) and (max-width:1440px){
+    .main-container__submenu i{
+       display:none;
+   } 
+   .main-container__nav{
+       display:block;
+   }
+   .nav__link {
+    font-size:1.5em;
+}
+   .logo__oblige{
+       font-size: 2.2em;
+   }
+   .logo__charity-fund {
+       font-size: 1.2em;
+    }
+    .main-container__title {
+       font-size: 3em;
+       margin:110px 0 0 75px;
+    }
+    .main-container__header-h2 {
+        font-size: 1.6em;
+        margin:0px 0 20px 75px;
+    }
+    .main-container__sentence {
+        font-size: 1.2em;
+        margin:0px 0 0 75px;
+    }
+    .btn {
+        font-size: 1.2em;
+        margin:30px 0 80px 75px;
+        width:15%;
+    }
+
+   .contribution__position-wrapper{
+       display:flex;
+   }
+  
+   .donation__block h4 {
+       font-size:1.5em;
+       margin:30px 0 20px 25px;
+   }
+   .donation__block p {
+      font-size:1.1em;
+      margin:20px 0 20px 25px;
+   }
+   .button {
+       font-size:1em;
+       margin:0 0 10px 25px;
+       width:40%;
+}
+
+}
+
+
+@media (min-width:1441px) and (max-width:1600px){
+    .main-container__submenu i{
+       display:none;
+   } 
+   .main-container__nav{
+       display:block;
+   }
+   .nav__link {
+    font-size:1.6em;
+}
+   .logo__oblige{
+       font-size: 2.3em;
+       margin-left:20px;
+   }
+   .logo__charity-fund {
+       margin-left:20px;
+    }
+    .main-container__title {
+       font-size: 3.7em;
+       margin:155px 0 0 75px;
+    }
+    .main-container__header-h2 {
+        font-size: 2em;
+        margin:0 0 20px 75px;
+    }
+    .main-container__sentence {
+        font-size: 1.4em;
+        margin:0px 0 0 75px;
+        
+    }
+    .btn {
+        font-size: 1.4em;
+        margin:30px 0 80px 75px;
+        width:10%;
+    }
+
+   .contribution__position-wrapper{
+       display:flex;
+   }
+  
+   .donation__block h4 {
+       font-size:1.8em;
+       margin:30px 0 20px 25px;
+   }
+   .donation__block p {
+      font-size:1.4em;
+      margin:20px 0 20px 25px;
+   }
+   .button {
+       font-size:1.2em;
+       margin:0 0 10px 25px;
+       width:40%;
+}
+
+}
+/* @media (max-width:1601px){
+
+    .main-container{
+        min-width:1600px;
+    }
+    .main-container__submenu i{
+       display:none;
+   } 
+   .main-container__nav{
+       display:block;
+   }
+   .nav__link {
+    font-size:2em;
+}
+   .logo__oblige{
+       font-size: 2.6em;
+       margin-left:30px;
+   }
+   .logo__charity-fund {
+       font-size: 1.6em;
+       margin-left:30px;
+    }
+    .main-container__title {
+       font-size: 4.2em;
+       margin:165px 0 0 75px;
+    }
+    .main-container__header-h2 {
+        font-size: 2.3em;
+        margin:0 0 20px 75px;
+    }
+    .main-container__sentence {
+        font-size: 1.6em;
+        margin:0px 0 0 75px;
+        
+    }
+    .btn {
+        font-size: 1.6em;
+        margin:30px 0 110px 75px;
+        width:10%;
+    }
+
+   .contribution__position-wrapper{
+       display:flex;
+   }
+  
+   .donation__block h4 {
+       font-size:1.9em;
+       margin:30px 0 20px 25px;
+   }
+   .donation__block p {
+      font-size:1.5em;
+      margin:20px 0 20px 25px;
+   }
+   .button {
+       font-size:1.4em;
+       margin:0 0 10px 25px;
+       width:40%;
+}
+
+} */
