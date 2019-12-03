@@ -1,6 +1,11 @@
 @font-face {
     font-family: 'FontAwesome';
-    src: url('fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('fonts/fontawesome-webfont.svg') format('svg'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.woff2') format('woff2'), url('fonts/fontawesome-webfont.otf') format('opentype');
+    src: url('fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+     url('fonts/fontawesome-webfont.svg') format('svg'), 
+     url('fonts/fontawesome-webfont.ttf') format('truetype'), 
+     url('fonts/fontawesome-webfont.woff') format('woff'), 
+     url('fonts/fontawesome-webfont.woff2') format('woff2'), 
+     url('fonts/fontawesome-webfont.otf') format('opentype');
 }
 
 body {
@@ -114,42 +119,46 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 0;
-    border-bottom: 1px solid gray;
+    margin-bottom: 2px; 
+}
+
+.donation__picture_image-one { 
+    background: url('images/bb1.jpg');
+}
+
+.donation__picture_image-two { 
+    background: url('images/bb2.jpg');
 }
 
 .donation__picture {
+    background-size: cover;
     width: 50%;
+    background-position-x: 25%;
 }
 
-.donation__picture img {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
 
 .donation__block {
     width: 50%;
-    background: rgb(228, 220, 220);
+    background: rgb(210, 210, 210);
+}
+.donation__block_position {
+    margin:20px;
 }
 
-.donation__block h4 {
+.designation {
     font-size: 1em;
-    margin: 20px 10px 10px 10px;
     letter-spacing: 0.1em;
+    margin:0;
 }
 
 .donation__block p {
-    font-size: 0.7em;
-    margin: 0 10px 0 10px;
+    font-size: 0.8em;
     color: rgb(136, 133, 133);
 }
 
 .button {
     color: rgb(241, 227, 227);
-    background: rgb(87, 206, 166);
-    margin: 10px 0 0 10px;
+    background: rgb(51, 193, 153);
     border: none;
     font-size: 0.6em;
 }
@@ -158,12 +167,8 @@ body {
     padding: 0.4em;
 }
 
-.main-container__button {
-    margin: 10px 0 0 10px;
-}
-
 .button_size-donation {
-    width: 35%;
+    width: 40%;
 }
 
 .mission {
@@ -394,13 +399,14 @@ body {
     margin:15px;
 }
 
-
 .our-gallery {
     width:100%;
+    background: rgb(245, 245, 245);
 
 }
 .main-container__our-gallery {
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom:50px;
 }
 
 .album {
@@ -428,45 +434,105 @@ body {
 .middle-picture img {
     width:100%;
 }
-
-@media (min-width:450px) and (max-width:500px) {
-    .donation__block h4 {
-        font-size: 1.2em;
-    }
-    .donation__block p {
-        font-size: 0.8em;
-    }
-    .button {
-        font-size: 0.7em;
-    }
+.latest-blog {
+    width:100%;
+    background: rgb(255,255,255);
 }
 
+.donation_position-relative {
+    position:relative;
+}
+.smoll-icon{
+    background: rgb(0,180,129);
+    width:2%;
+    font-size: 0.5em;
+    text-align: center;
+    padding:3% 2%;
+    color:rgb(255, 255,255);
+    position: absolute;
+    bottom:30%;
+}
+
+.main-container__portico {
+    margin-bottom:50px;
+}
+.designation_modification {
+   color: rgb(1, 179, 129);
+}
+.donation__block_modification {
+     background:rgb(245,245,245);
+}
+
+.heart-block {
+ width:100%;
+ background: rgb(1, 179, 129);
+}
+
+.heart-block__position-wrapper {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin:auto;
+    padding: 20px;
+   
+}
+
+.heart-image {
+    text-align: center;
+    flex-basis: 50%;
+}
+.heart-image img{
+    width:50%;
+}
+.heart-article { 
+    flex-basis: 50%;
+}
+.appellation {
+    font-size:1.1em;
+    color:white;
+    margin:0;
+}
+.paragraph {
+    font-size:0.8em;
+    color: #127559;
+}
+.button_size-heart {
+    width:20%
+}
+.contact-us {
+    width:100%;
+    background: rgb(255,255,255);
+}
+
+
+
 @media (min-width:501px) and (max-width:600px) {
-    .donation__block h4 {
-        font-size: 1.2em;
+    .designation {
+        font-size: 1.1em;
     }
     .donation__block p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     .button {
         font-size: 0.8em;
     }
+
+    .button_size-donation {
+        width: 40%;
+    }
     .button__position-wrapper {
-        padding: 0.4em;
+        padding: 0.5em;
     }
-    .main-container__button {
-        margin: 20px 0 0 10px;
-    }
+   
     .statistics {
         flex-direction: row;
         justify-content: space-evenly;
+        background-position-y: 20%;
     }
     .indicators {
         font-size: 1.2em;
     }
-    .statistics {
-        background-position-y: 20%;
-    }
+   
     .heading {
         font-size: 2em;
     }
@@ -508,6 +574,23 @@ body {
     .smoll-picture {
         width:50%
     }
+
+    .smoll-icon{
+        font-size: 0.6em;   
+    }
+    .heart-block__position-wrapper {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .button_size-heart {
+        width:40%
+    }
+    .heart-image img{
+        width:80%;
+    } 
+  
+
 }
 
 @media (min-width:601px) and (max-width:700px) {
@@ -533,25 +616,35 @@ body {
     .btn {
         font-size: 0.8em;
     }
-    .donation__block h4 {
-        font-size: 1.3em;
+
+    .designation {
+        font-size: 0.8em;
     }
     .donation__block p {
-        font-size: 1.1em;
+        font-size: 0.6em;
     }
     .button {
-        font-size: 0.9em;
+        font-size: 0.6em;
+    }
+
+    .button_size-donation {
+        width: 50%;
     }
     .button__position-wrapper {
-        padding: 0.4em;
+        padding: 0.5em;
     }
-    .main-container__button {
-        margin: 20px 0 0 10px;
+    .donation__block_position {
+        margin:5px;
     }
+    .contribution__position-wrapper {
+        display: flex;
+    } 
+
     .statistics {
         flex-direction: row;
         justify-content: space-evenly;
     }
+
     .indicators {
         font-size: 1.2em;
     }
@@ -606,10 +699,45 @@ body {
         width:50%
     }
     .middle-picture {
-        width:100%
+        width:33.33%
+    }
+    .portico__position-wrapper {
+        display: flex;
+    } 
+  
+     .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .donation__block_position {
+        margin:15px;
+    }
+    .smoll-icon{
+        width:4%;
+        font-size: 0.6em;
+        padding:3% 2%; 
     }
 
+    .heart-block__position-wrapper {
+        display:flex;
+        flex-direction:row;
+    }
 
+    .button_size-heart {
+        width:30%
+    }
+    .heart-image img{
+        width:70%;
+    } 
+    .appellation {
+        font-size:1.2em;
+    }
+    .paragraph {
+        font-size:1em;
+    }
 }
 
 @media (min-width:701px) and (max-width:767px) {
@@ -634,18 +762,30 @@ body {
     .btn {
         font-size: 0.9em;
     }
-    .donation__block h4 {
-        font-size: 1.5em;
+
+    .designation {
+        font-size: 1.1em;
     }
     .donation__block p {
-        font-size: 1.3em;
+        font-size: 0.8em;
     }
     .button {
-        font-size: 1em;
+        font-size: 0.7em;
     }
-    .main-container__button {
-        margin: 30px 0 0 10px;
+
+    .button_size-donation {
+        width: 45%;
     }
+    .button__position-wrapper {
+        padding: 0.5em;
+    }
+    .donation__block_position {
+        margin:7px;
+    }
+    .contribution__position-wrapper {
+        display: flex;
+    } 
+   
     .mission__position-wrapper {
         flex-direction: row;
     }
@@ -752,6 +892,54 @@ body {
         width:33.33%;
     }
 
+    .portico__position-wrapper {
+        display: flex;
+    } 
+  
+     .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .portico__position-wrapper {
+        display: flex;
+    } 
+  
+     .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .donation__block_position {
+        margin:16px;
+    }
+    .smoll-icon{
+        width:4%;
+        font-size: 0.6em;
+        padding:3% 2%; 
+    }
+    .heart-block__position-wrapper {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .button_size-heart {
+        width:30%
+    }
+    .heart-image img{
+        width:60%;
+    } 
+    .appellation {
+        font-size:1.2em;
+    }
+    .paragraph {
+        font-size:1em;
+    }
+
 }
 
 @media (min-width:768px) and (max-width:900px) {
@@ -776,34 +964,36 @@ body {
     .main-container__sentence {
         font-size: 1.2em;
     }
+    .contribution__position-wrapper {
+        display: flex;
+    }
     .btn {
         font-size: 1em;
         margin: 30px 0 70px 30px;
     }
-    .donation__block h4 {
+    .designation {
         font-size: 1.1em;
     }
     .donation__block p {
+        font-size: 0.8em;
+    }
+    .button {
         font-size: 0.7em;
     }
-    .button {
-        font-size: 0.8em;
-        margin: 0 0 0 10px;
-        padding: 0.4em;
-        width: 40%;
+
+    .button_size-donation {
+        width: 45%;
     }
-    .donation__block h4 {
-        font-size: 1.5em;
+    .button__position-wrapper {
+        padding: 0.5em;
     }
-    .donation__block p {
-        font-size: 1.3em;
+    .donation__block_position {
+        margin:10px;
     }
-    .button {
-        font-size: 1em;
-    }
-    .main-container__button {
-        margin: 40px 0 0 10px;
-    }
+    .contribution__position-wrapper {
+        display: flex;
+    } 
+    
     .mission__position-wrapper {
         flex-direction: row;
     }
@@ -912,6 +1102,43 @@ body {
     .middle-picture {
         width:33.33%;
     }
+    .portico__position-wrapper {
+        display: flex;
+    } 
+  
+     .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .donation__block_position {
+        margin:16px;
+    }
+    .smoll-icon{
+        width:3%;
+        font-size: 0.6em;
+        padding:3% 2%; 
+    }
+
+    .heart-block__position-wrapper {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .button_size-heart {
+        width:30%
+    }
+    .heart-image img{
+        width:50%;
+    } 
+    .appellation {
+        font-size:1.1em;
+    }
+    .paragraph {
+        font-size:0.9em;
+    }
 }
 
 @media (min-width:901px) and (max-width:1023px) {
@@ -943,22 +1170,28 @@ body {
         font-size: 1.1em;
         margin: 30px 0 80px 60px;
     }
-    .contribution__position-wrapper {
-        display: flex;
-    }
-    .donation__block h4 {
-        font-size: 1.4em;
+    
+    .designation {
+        font-size: 1.2em;
     }
     .donation__block p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .button {
-        font-size: 1em;
+        font-size: 0.8em;
+    }
+
+    .button_size-donation {
         width: 45%;
     }
-    .main-container__button {
-        margin: 0 0 10px 10px;
+ 
+    .donation__block_position {
+        margin:10px;
     }
+    .contribution__position-wrapper {
+        display: flex;
+    } 
+    
     .mission__position-wrapper {
         flex-direction: row;
     }
@@ -1064,7 +1297,54 @@ body {
     .middle-picture {
         width:33.33%;
     }
-    
+    .portico__position-wrapper {
+        display: flex;
+    } 
+  
+     .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .portico__position-wrapper {
+        display: flex;
+    } 
+  
+     .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .donation__block_position {
+        margin:18px;
+    }
+    .smoll-icon{
+        width:3%;
+        font-size: 0.6em;
+        padding:3% 2%; 
+    }
+
+    .heart-block__position-wrapper {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .button_size-heart {
+        width:30%
+    }
+    .heart-image img{
+        width:50%;
+    } 
+    .appellation {
+        font-size:1.2em;
+    }
+    .paragraph {
+        font-size:1em;
+    }
 
 }
 
@@ -1100,19 +1380,26 @@ body {
     .contribution__position-wrapper {
         display: flex;
     }
-    .donation__block h4 {
-        font-size: 1.4em;
+    .designation {
+        font-size: 1.3em;
     }
     .donation__block p {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     .button {
-        font-size: 1em;
-        width: 40%;
+        font-size: 0.9em;
     }
-    .main-container__button {
-        margin: 0 0 10px 10px;
+
+    .button_size-donation {
+        width: 45%;
     }
+ 
+    .donation__block_position {
+        margin:15px;
+    }
+    .contribution__position-wrapper {
+        display: flex;
+    } 
     .mission__position-wrapper {
         flex-direction: row;
     }
@@ -1221,6 +1508,53 @@ body {
     .middle-picture {
         width:33.33%;
     }
+
+    .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .portico__position-wrapper {
+        display: flex;
+    } 
+  
+     .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .donation__block_position {
+        margin:18px;
+    }
+    .smoll-icon{
+        width:3%;
+        font-size: 0.6em;
+        padding:3% 2%; 
+    }
+
+
+    .heart-block__position-wrapper {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .button_size-heart {
+        width:20%
+    }
+    .heart-image img{
+        width:50%;
+    } 
+    .appellation {
+        font-size:1.4em;
+    }
+    .paragraph {
+        font-size:1.2em;
+    }
+
 }
 
 @media (min-width:1201px) and (max-width:1440px) {
@@ -1256,24 +1590,26 @@ body {
         margin: 30px 0 80px 75px;
         width: 15%;
     }
-    .contribution__position-wrapper {
-        display: flex;
-    }
-    .donation__block h4 {
-        font-size: 1.5em;
-        margin: 30px 0 20px 25px;
+    .designation {
+        font-size: 1.4em;
     }
     .donation__block p {
-        font-size: 1.1em;
-        margin: 20px 0 20px 25px;
+        font-size: 1.2em;
     }
     .button {
         font-size: 1em;
+    }
+
+    .button_size-donation {
         width: 40%;
     }
-    .main-container__button {
-        margin: 0 0 10px 25px;
+ 
+    .donation__block_position {
+        margin:15px;
     }
+    .contribution__position-wrapper {
+        display: flex;
+    } 
     .mission__position-wrapper {
         flex-direction: row;
     }
@@ -1383,6 +1719,51 @@ body {
     .middle-picture {
         width:33.33%;
     }
+
+    .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .portico__position-wrapper {
+        display: flex;
+    } 
+  
+     .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .donation__block_position {
+        margin:20px;
+    }
+    .smoll-icon{
+        width:3%;
+        font-size: 0.8em;
+        padding:3% 2%; 
+    }
+
+    .heart-block__position-wrapper {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .button_size-heart {
+        width:20%
+    }
+    .heart-image img{
+        width:50%;
+    } 
+    .appellation {
+        font-size:1.6em;
+    }
+    .paragraph {
+        font-size:1.3em;
+    }
 }
 
 @media (min-width:1441px) and (max-width:1600px) {
@@ -1419,24 +1800,26 @@ body {
         margin: 30px 0 80px 75px;
         width: 10%;
     }
-    .contribution__position-wrapper {
-        display: flex;
-    }
-    .donation__block h4 {
-        font-size: 1.8em;
-        margin: 30px 0 20px 25px;
+    .designation {
+        font-size: 1.7em;
     }
     .donation__block p {
-        font-size: 1.4em;
-        margin: 20px 0 20px 25px;
+        font-size: 1.5em;
     }
     .button {
-        font-size: 1.2em;
+        font-size: 1.3em;
+    }
+
+    .button_size-donation {
         width: 40%;
     }
-    .main-container__button {
-        margin: 0 0 10px 25px;
+ 
+    .donation__block_position {
+        margin:20px;
     }
+    .contribution__position-wrapper {
+        display: flex;
+    } 
     .mission__position-wrapper {
         flex-direction: row;
     }
@@ -1549,6 +1932,52 @@ body {
     .middle-picture {
         width:33.33%;
     }
+
+    .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .portico__position-wrapper {
+        display: flex;
+    } 
+  
+     .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .donation__block_position {
+        margin:25px;
+    }
+    .smoll-icon{
+        width:3%;
+        font-size: 1em;
+        padding:3% 2%; 
+    }
+
+
+    .heart-block__position-wrapper {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .button_size-heart {
+        width:25%
+    }
+    .heart-image img{
+        width:50%;
+    } 
+    .appellation {
+        font-size:2em;
+    }
+    .paragraph {
+        font-size:1.4em;
+    }
 }
 
 @media (min-width:1601px) {
@@ -1586,25 +2015,27 @@ body {
         margin: 30px 0 110px 75px;
         width: 10%;
     }
-    .contribution__position-wrapper {
-        display: flex;
-    }
-    .donation__block h4 {
-        font-size: 1.9em;
-        margin: 30px 0 20px 25px;
+
+    .designation {
+        font-size: 1.8em;
     }
     .donation__block p {
-        font-size: 1.5em;
-        margin: 20px 0 20px 25px;
+        font-size: 1.6em;
     }
     .button {
         font-size: 1.4em;
-        margin: 0 0 10px 25px;
+    }
+
+    .button_size-donation {
         width: 40%;
     }
-    .main-container__button {
-        margin: 0 0 10px 25px;
+    .donation__block_position {
+        margin:25px;
     }
+    .contribution__position-wrapper {
+        display: flex;
+    } 
+
     .mission__position-wrapper {
         flex-direction: row;
     }
@@ -1715,5 +2146,49 @@ body {
     }
     .middle-picture {
         width:33.33%;
+    }
+    .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .portico__position-wrapper {
+        display: flex;
+    } 
+  
+     .portico__position-wrapper_reverse {
+        flex-direction:row-reverse ;
+    } 
+
+    .donation_reverse{
+        flex-direction:row-reverse ;
+    } 
+    .donation__block_position {
+        margin:35px;
+    }
+    .smoll-icon{
+        width:3%;
+        font-size: 1.2em;
+        padding:3% 2%; 
+    }
+
+    .heart-block__position-wrapper {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .button_size-heart {
+        width:25%
+    }
+    .heart-image img{
+        width:50%;
+    } 
+    .appellation {
+        font-size:2.2em;
+    }
+    .paragraph {
+        font-size:1.6em;
     }
 }
