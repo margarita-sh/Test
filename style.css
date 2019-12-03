@@ -541,6 +541,9 @@ textarea {
 .button_size-submit {
     width: 100%;
 }
+.button-submit_font {
+    font-size:1em;
+}
 
 .box-form {
     padding: 10px;
@@ -564,6 +567,17 @@ textarea {
 
 .box-address__paragraph {
     color: gray;
+}
+.empty-block {
+  width: 100%;
+  border:1px solid gray;
+  box-sizing: border-box;
+}
+
+.empty-block__content{
+    background: #e4e3df;
+    height:90px;
+    margin: 5px;
 }
 
 @media (min-width:501px) and (max-width:600px) {
@@ -1182,6 +1196,9 @@ textarea {
     .box-address {
         width: 50%;
     }
+    .button-submit_font {
+        font-size:1em;
+    }
 }
 
 @media (min-width:901px) and (max-width:1023px) {
@@ -1381,6 +1398,9 @@ textarea {
     }
     .box-address {
         width: 50%;
+    }
+    .button-submit_font {
+        font-size:1.1em;
     }
 }
 
@@ -1585,6 +1605,12 @@ textarea {
     }
     .box-address {
         width: 50%;
+    }
+    .button-submit_font {
+        font-size:1.2em;
+    }
+    .empty-block {
+        height: 150px;
     }
 }
 
@@ -1802,6 +1828,9 @@ textarea {
     }
     input, textarea {
         font-size: 1.4em;
+    }
+    .empty-block {
+        height: 200px;
     }
 }
 
@@ -2024,6 +2053,12 @@ textarea {
     input, textarea {
         font-size: 1.6em;
     }
+    .button-submit_font {
+        font-size:1.4em;
+    }
+    .empty-block {
+        height: 200px;
+    }
 }
 
 @media (min-width:1601px) {
@@ -2102,7 +2137,7 @@ textarea {
         width: 30%;
     }
     .mission__images img {
-        widows: 90%;
+        width: 90%;
         box-shadow: -0.3em 0.3em 0.5em black;
     }
     .statistics {
@@ -2245,5 +2280,11 @@ textarea {
     }
     input, textarea {
         font-size: 1.6em;
+    }
+    .button-submit_font {
+        font-size:1.4em;
+    }
+    .empty-block {
+        height: 250px;
     }
 }
