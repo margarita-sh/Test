@@ -74,10 +74,9 @@ body {
     color: white;
 }
 
-/* .nav__link a:hover {
+.main-container__list li:first-child a {
     color: rgb(87, 206, 166);
-    transform: scale(1.2);
-} */
+} 
 
 .main-container__list li {
     display: inline;
@@ -87,24 +86,31 @@ body {
 .main-container__list li:last-child {
     margin-right: 0;
 }
+.title {
+    color: white;
+    font-size: 1.6em;
+}
 
 .main-container__title {
-    color: white;
-    margin: 0 0 0 30px;
-    font-size: 1.6em;
+    margin:0;
+}
+
+.block-wrap{
+    margin-left:30px; 
+    padding-bottom: 40px;
 }
 
 .main-container__header-h2 {
     color: rgb(87, 206, 166);
     font-size: 1em;
-    margin: 0 0 0 30px;
+    margin-top:0;
 }
 
 .main-container__sentence {
     color: gray;
     font-size: 0.7em;
-    margin: 0 0 10px 30px;
     line-height: 1;
+    margin:0;
 }
 
 .btn {
@@ -117,7 +123,7 @@ body {
 }
 
 .main-container__btn {
-    margin: 0 0 40px 30px;
+    margin-top: 20px;
 }
 
 .donation {
@@ -658,6 +664,11 @@ textarea {
     .logo__charity-fund {
         font-size: 1.1em;
     }
+
+    .block-wrap{
+        padding-bottom: 60px;
+    }
+
     .main-container__title {
         font-size: 1.7em;
     }
@@ -788,9 +799,12 @@ textarea {
     }
     .main-container__title {
         font-size: 1.9em;
+        margin-top:40px;
     }
+
     .main-container__header-h2 {
         font-size: 1.4em;
+        
     }
     .main-container__sentence {
         font-size: 1.1em;
@@ -914,9 +928,12 @@ textarea {
     .logo__oblige {
         font-size: 2em;
     }
-
+    .main-container__title {
+        font-size:2.2em;
+        margin-top:60px;
+    }
     .main-container__header-h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     .main-container__sentence {
         font-size: 1.2em;
@@ -928,7 +945,7 @@ textarea {
         font-size: 1em;
     }
     .main-container__btn {
-        margin: 30px 0 70px 30px;
+        margin-top:30px;
     }
     
     .contribution__position-wrapper {
@@ -1027,23 +1044,27 @@ textarea {
 }
 
 @media (min-width:900px)  {
+    .block-wrap {
+        margin-left:60px;
+    }
     .main-container__title {
-        font-size: 2.4em;
-        margin: 70px 0 0 60px;
+        font-size: 2.5em;
+        margin-top: 80px;
     }
     .main-container__header-h2 {
         font-size: 1.4em;
-        margin: 0px 0 20px 60px;
+        margin-bottom: 20px;
     }
     .main-container__sentence {
         font-size: 1.1em;
-        margin: 0px 0 0 60px;
     }
     .btn {
         font-size: 1.1em;
     }
     .main-container__btn {
-        margin: 30px 0 80px 60px;
+       margin-top: 30px;
+       margin-bottom:30px;
+    
     }
     .designation {
         font-size: 1.2em;
@@ -1150,9 +1171,7 @@ textarea {
     .button {
         font-size: 0.9em;
     }
-    .contribution__position-wrapper {
-        display: flex;
-    }
+  
     .mission__position-wrapper {
         flex-direction: row;
     }
@@ -1244,25 +1263,29 @@ textarea {
     .logo__oblige {
         font-size: 2.2em;
     }
+    .block-wrap {
+        margin-left:75px;
+    }
     .main-container__title {
         font-size: 3em;
-        margin: 110px 0 0 75px;
+        margin-top:110px;
     }
     .main-container__header-h2 {
         font-size: 1.6em;
-        margin: 0px 0 20px 75px;
+        margin-bottom:20px;
     }
     .main-container__sentence {
         font-size: 1.2em;
-        margin: 0px 0 0 75px;
     }
     .btn {
         font-size: 1.2em;
         width: 15%;
     }
     .main-container__btn {
-        margin: 30px 0 80px 75px;
+       margin-top: 30px;
+       margin-bottom:40px;
     }
+
     .designation {
         font-size: 1.4em;
     }
@@ -1371,7 +1394,7 @@ textarea {
     
 }
 
-@media (min-width:1440px) {
+@media (min-width:1400px) {
     .nav__link {
         font-size: 1.6em;
     }
@@ -1382,12 +1405,18 @@ textarea {
     .logo__charity-fund {
         margin-left: 20px;
     }
+
+    .main-container__btn {
+        margin-top: 30px;
+        margin-bottom:50px;
+     }
+
     .main-container__title {
-        font-size: 3.7em;
-        margin: 155px 0 0 75px;
+        font-size: 3.6em;
+        margin-top:130px;
     }
     .main-container__header-h2 {
-        font-size: 2em;
+        font-size: 2.4em;
     }
     .main-container__sentence {
         font-size: 1.4em;
@@ -1522,9 +1551,10 @@ textarea {
         font-size: 1.6em;
         margin-left: 30px;
     }
+    
     .main-container__title {
         font-size: 4.2em;
-        margin: 165px 0 0 75px;
+        margin-top:155px;
     }
     .main-container__header-h2 {
         font-size: 2.3em;
@@ -1536,8 +1566,10 @@ textarea {
         font-size: 1.6em;
     }
     .main-container__btn {
-        margin: 30px 0 110px 75px;
+        margin-top:30px; 
+        margin-bottom: 65px;
     }
+
     .designation {
         font-size: 1.8em;
     }
