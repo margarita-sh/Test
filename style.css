@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'FontAwesome';
-    src: url('fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('fonts/fontawesome-webfont.svg') format('svg'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.woff2') format('woff2'), url('fonts/fontawesome-webfont.otf') format('opentype');
+    src: url('fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('fonts/fontawesome-webfont.svg') format('svg'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.woff2') format('woff2'), url('fonts/FontAwesome.otf') format('opentype');
 }
 
 html {
@@ -76,7 +76,7 @@ body {
 
 .main-container__list li:first-child a {
     color: rgb(87, 206, 166);
-} 
+}
 
 .main-container__list li {
     display: inline;
@@ -86,31 +86,33 @@ body {
 .main-container__list li:last-child {
     margin-right: 0;
 }
+
 .title {
     color: white;
     font-size: 1.6em;
+    text-shadow: 3px -3px 2px black;
 }
 
 .main-container__title {
-    margin:0;
+    margin: 0;
 }
 
-.block-wrap{
-    margin-left:30px; 
+.block-wrap {
+    margin-left: 30px;
     padding-bottom: 40px;
 }
 
 .main-container__header-h2 {
     color: rgb(87, 206, 166);
     font-size: 1em;
-    margin-top:0;
+    margin-top: 0;
 }
 
 .main-container__sentence {
     color: gray;
     font-size: 0.7em;
     line-height: 1;
-    margin:0;
+    margin: 0;
 }
 
 .btn {
@@ -434,12 +436,9 @@ body {
     flex-direction: column;
 }
 
-.smoll-picture img,
-.big-picture img,
-.middle-picture img {
-       width: 100%;
+.smoll-picture img, .big-picture img, .middle-picture img {
+    width: 100%;
 }
-
 
 .latest-blog {
     width: 100%;
@@ -542,8 +541,9 @@ textarea {
 .button_size-submit {
     width: 100%;
 }
+
 .button-submit_font {
-    font-size:1em;
+    font-size: 1em;
 }
 
 .box-form {
@@ -569,29 +569,32 @@ textarea {
 .box-address__paragraph {
     color: gray;
 }
+
 .empty-block {
-  width: 100%;
-  border:1px solid gray;
-  box-sizing: border-box;
+    width: 100%;
+    border: 1px solid gray;
+    box-sizing: border-box;
 }
 
-.empty-block__content{
+.empty-block__content {
     background: #e4e3df;
-    height:90px;
+    height: 90px;
     margin: 5px;
 }
+
 .footer-social {
-    background:black;
-    margin-top:10px;
+    background: black;
+    margin-top: 10px;
 }
+
 .social_modification {
     background: white;
     flex-basis: 30px;
-    margin-top:20px;
-    margin-bottom:10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-@media (min-width:500px)  {
+@media (min-width:500px) {
     .designation {
         font-size: 1.1em;
     }
@@ -601,7 +604,6 @@ textarea {
     .button {
         font-size: 0.8em;
     }
-   
     .button__position-wrapper {
         padding: 0.5em;
     }
@@ -619,7 +621,6 @@ textarea {
     .foreword {
         font-size: 1.4em;
     }
- 
     .nested-title {
         font-size: 1.8em;
     }
@@ -629,7 +630,6 @@ textarea {
     .badge-volunteers__caption {
         font-size: 1.4em;
     }
-
     .gallery__nested-item_margin-s {
         margin-top: 80px;
         margin-bottom: 80px;
@@ -664,11 +664,9 @@ textarea {
     .logo__charity-fund {
         font-size: 1.1em;
     }
-
-    .block-wrap{
+    .block-wrap {
         padding-bottom: 60px;
     }
-
     .main-container__title {
         font-size: 1.7em;
     }
@@ -694,18 +692,15 @@ textarea {
     .button_size-donation {
         width: 50%;
     }
-   
     .contribution__position-wrapper {
         display: flex;
     }
-    
     .statistics {
         background-position-y: 30%;
     }
     .heading {
         font-size: 1.8em;
     }
-
     .gallery__nested-item_margin-l {
         margin-top: 180px;
         margin-bottom: 180px;
@@ -759,7 +754,6 @@ textarea {
     .smoll-icon {
         width: 4%;
     }
-
     .button_size-heart {
         width: 30%
     }
@@ -783,11 +777,11 @@ textarea {
         width: 50%;
     }
     .social__position-wrapper {
-        width:25%;
+        width: 25%;
     }
 }
 
-@media (min-width:700px)  {
+@media (min-width:700px) {
     .main-container__submenu i {
         font-size: 4.2em;
     }
@@ -799,12 +793,10 @@ textarea {
     }
     .main-container__title {
         font-size: 1.9em;
-        margin-top:40px;
+        margin-top: 40px;
     }
-
     .main-container__header-h2 {
         font-size: 1.4em;
-        
     }
     .main-container__sentence {
         font-size: 1.1em;
@@ -824,7 +816,6 @@ textarea {
     .button_size-donation {
         width: 45%;
     }
-    
     .contribution__position-wrapper {
         display: flex;
     }
@@ -837,12 +828,8 @@ textarea {
     .mission__block h3 {
         font-size: 1.5em;
     }
- 
     .button_size-mission {
-        width: 30%;
-    }
-    .button_position {
-        margin: 15px 20px;
+        width: 20%;
     }
     .mission__images {
         width: 30%;
@@ -850,7 +837,6 @@ textarea {
     .mission__images img {
         width: 90%;
     }
-   
     .statistics {
         background-position-y: 20%;
     }
@@ -860,7 +846,6 @@ textarea {
     .foreword {
         font-size: 1.6em;
     }
- 
     .gallery__nested-item_margin-s {
         margin-top: 120px;
         margin-bottom: 120px;
@@ -872,16 +857,13 @@ textarea {
         margin-top: 200px;
         margin-bottom: 200px;
     }
-
     .gallery__nested-item_margin-s {
         margin-top: 50px;
         margin-bottom: 50px;
     }
-  
     .badge-volunteers {
         width: 40%;
     }
-    
     .smoll-picture {
         width: 25%;
     }
@@ -912,13 +894,12 @@ textarea {
     .donation__block_position {
         margin: 16px;
     }
-
     .heart-image img {
         width: 60%;
     }
 }
 
-@media (min-width:768px)  {
+@media (min-width:768px) {
     .main-container__submenu i {
         display: none;
     }
@@ -929,8 +910,8 @@ textarea {
         font-size: 2em;
     }
     .main-container__title {
-        font-size:2.2em;
-        margin-top:60px;
+        font-size: 2.2em;
+        margin-top: 60px;
     }
     .main-container__header-h2 {
         font-size: 1.4em;
@@ -945,25 +926,19 @@ textarea {
         font-size: 1em;
     }
     .main-container__btn {
-        margin-top:30px;
+        margin-top: 30px;
     }
-    
     .contribution__position-wrapper {
         display: flex;
     }
     .mission__position-wrapper {
         flex-direction: row;
     }
-  
     .mission__block h3 {
         font-size: 1.5em;
     }
     .mission__block p {
         font-size: 0.9em;
-    }
-  
-    .button_position {
-        margin: 15px 20px;
     }
     .heading {
         font-size: 1.5em;
@@ -992,7 +967,6 @@ textarea {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-
     .gallery__little-photo {
         width: 60%;
         margin-top: 0;
@@ -1003,10 +977,9 @@ textarea {
     .badge-volunteers {
         width: 20%;
     }
-     .fab {
+    .fab {
         font-size: 0.7em;
-    } 
- 
+    }
     .smoll-picture {
         width: 25%;
     }
@@ -1025,7 +998,6 @@ textarea {
     .donation_reverse {
         flex-direction: row-reverse;
     }
-   
     .smoll-icon {
         width: 3%;
     }
@@ -1039,13 +1011,13 @@ textarea {
         font-size: 0.9em;
     }
     .social__position-wrapper {
-        width:20%;
+        width: 20%;
     }
 }
 
-@media (min-width:900px)  {
+@media (min-width:900px) {
     .block-wrap {
-        margin-left:60px;
+        margin-left: 60px;
     }
     .main-container__title {
         font-size: 2.5em;
@@ -1062,9 +1034,8 @@ textarea {
         font-size: 1.1em;
     }
     .main-container__btn {
-       margin-top: 30px;
-       margin-bottom:30px;
-    
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     .designation {
         font-size: 1.2em;
@@ -1093,9 +1064,6 @@ textarea {
     .button_size-mission {
         width: 20%;
     }
-    .button_position {
-        margin: 15px 20px;
-    }
     .heading {
         font-size: 2.2em;
     }
@@ -1112,11 +1080,9 @@ textarea {
     .nested-article {
         font-size: 0.8em;
     }
-  
     .badge-volunteers {
         width: 20%;
     }
- 
     .smoll-picture {
         width: 25%;
     }
@@ -1154,7 +1120,7 @@ textarea {
         font-size: 1em;
     }
     .button-submit_font {
-        font-size:1.1em;
+        font-size: 1.1em;
     }
 }
 
@@ -1171,7 +1137,6 @@ textarea {
     .button {
         font-size: 0.9em;
     }
-  
     .mission__position-wrapper {
         flex-direction: row;
     }
@@ -1180,9 +1145,6 @@ textarea {
     }
     .mission__block p {
         font-size: 1.2em;
-    }
-    .button_position {
-        margin: 15px 20px;
     }
     .mission__images img {
         width: 80%;
@@ -1231,29 +1193,25 @@ textarea {
     .donation_reverse {
         flex-direction: row-reverse;
     }
-
     .button_size-heart {
         width: 20%
     }
- 
     .appellation {
         font-size: 1.4em;
     }
     .paragraph {
         font-size: 1.2em;
     }
- 
     .button-submit_font {
-        font-size:1.2em;
+        font-size: 1.2em;
     }
-    .empty-block__content{
-        height:120px;
+    .empty-block__content {
+        height: 120px;
         margin: 5px;
     }
     .social__position-wrapper {
-        width:15%;
+        width: 15%;
     }
-    
 }
 
 @media (min-width:1200px) {
@@ -1264,15 +1222,15 @@ textarea {
         font-size: 2.2em;
     }
     .block-wrap {
-        margin-left:75px;
+        margin-left: 75px;
     }
     .main-container__title {
         font-size: 3em;
-        margin-top:110px;
+        margin-top: 110px;
     }
     .main-container__header-h2 {
         font-size: 1.6em;
-        margin-bottom:20px;
+        margin-bottom: 20px;
     }
     .main-container__sentence {
         font-size: 1.2em;
@@ -1282,10 +1240,9 @@ textarea {
         width: 15%;
     }
     .main-container__btn {
-       margin-top: 30px;
-       margin-bottom:40px;
+        margin-top: 30px;
+        margin-bottom: 40px;
     }
-
     .designation {
         font-size: 1.4em;
     }
@@ -1298,22 +1255,17 @@ textarea {
     .button_size-donation {
         width: 40%;
     }
- 
     .contribution__position-wrapper {
         display: flex;
     }
     .mission__position-wrapper {
         flex-direction: row;
     }
-    
     .mission__block h3 {
         font-size: 3em;
     }
     .mission__block p {
         font-size: 1.4em;
-    }
-    .button_position {
-        margin: 15px 20px;
     }
     .indicators {
         font-size: 1.6em;
@@ -1391,7 +1343,6 @@ textarea {
     input, textarea {
         font-size: 1.4em;
     }
-    
 }
 
 @media (min-width:1400px) {
@@ -1405,15 +1356,13 @@ textarea {
     .logo__charity-fund {
         margin-left: 20px;
     }
-
     .main-container__btn {
         margin-top: 30px;
-        margin-bottom:50px;
-     }
-
+        margin-bottom: 50px;
+    }
     .main-container__title {
         font-size: 3.6em;
-        margin-top:130px;
+        margin-top: 130px;
     }
     .main-container__header-h2 {
         font-size: 2.4em;
@@ -1434,7 +1383,6 @@ textarea {
     .button {
         font-size: 1.3em;
     }
-
     .contribution__position-wrapper {
         display: flex;
     }
@@ -1449,10 +1397,6 @@ textarea {
     }
     .mission__block p {
         font-size: 1.6em;
-    }
-    
-    .button_position {
-        margin: 15px 20px;
     }
     .heading {
         font-size: 3.7em;
@@ -1529,13 +1473,13 @@ textarea {
         font-size: 1.6em;
     }
     .button-submit_font {
-        font-size:1.4em;
+        font-size: 1.4em;
     }
     .social__position-wrapper {
-        width:10%;
+        width: 10%;
     }
-    .empty-block__content{
-        height:150px;
+    .empty-block__content {
+        height: 150px;
     }
 }
 
@@ -1551,10 +1495,9 @@ textarea {
         font-size: 1.6em;
         margin-left: 30px;
     }
-    
     .main-container__title {
         font-size: 4.2em;
-        margin-top:155px;
+        margin-top: 155px;
     }
     .main-container__header-h2 {
         font-size: 2.3em;
@@ -1566,10 +1509,9 @@ textarea {
         font-size: 1.6em;
     }
     .main-container__btn {
-        margin-top:30px; 
+        margin-top: 30px;
         margin-bottom: 65px;
     }
-
     .designation {
         font-size: 1.8em;
     }
@@ -1579,7 +1521,6 @@ textarea {
     .button {
         font-size: 1.4em;
     }
-
     .contribution__position-wrapper {
         display: flex;
     }
@@ -1591,10 +1532,6 @@ textarea {
     }
     .mission__block p {
         font-size: 2em;
-    }
-
-    .button_position {
-        margin: 15px 20px;
     }
     .mission__images img {
         width: 90%;
@@ -1669,8 +1606,7 @@ textarea {
     .box-address__paragraph {
         font-size: 1.4em;
     }
-    .empty-block__content{
-        height:180px;
+    .empty-block__content {
+        height: 180px;
     }
-    
 }
