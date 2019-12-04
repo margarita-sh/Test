@@ -74,10 +74,10 @@ body {
     color: white;
 }
 
-.nav__link:hover {
+/* .nav__link a:hover {
     color: rgb(87, 206, 166);
     transform: scale(1.2);
-}
+} */
 
 .main-container__list li {
     display: inline;
@@ -428,17 +428,12 @@ body {
     flex-direction: column;
 }
 
-.smoll-picture img {
-    width: 100%;
-}
-
-.big-picture img {
-    width: 100%;
-}
-
+.smoll-picture img,
+.big-picture img,
 .middle-picture img {
-    width: 100%;
+       width: 100%;
 }
+
 
 .latest-blog {
     width: 100%;
@@ -581,6 +576,7 @@ textarea {
 }
 .footer-social {
     background:black;
+    margin-top:10px;
 }
 .social_modification {
     background: white;
@@ -588,16 +584,8 @@ textarea {
     margin-top:20px;
     margin-bottom:10px;
 }
-.social {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-    margin-bottom: 10px;
-    width: 15%;
-}
 
-@media (min-width:501px) and (max-width:600px) {
+@media (min-width:500px)  {
     .designation {
         font-size: 1.1em;
     }
@@ -607,9 +595,7 @@ textarea {
     .button {
         font-size: 0.8em;
     }
-    .button_size-donation {
-        width: 40%;
-    }
+   
     .button__position-wrapper {
         padding: 0.5em;
     }
@@ -627,12 +613,8 @@ textarea {
     .foreword {
         font-size: 1.4em;
     }
-    .gallery__nested-item_margin-l {
-        margin-top: 150px;
-        margin-bottom: 150px;
-    }
+ 
     .nested-title {
-        text-align: center;
         font-size: 1.8em;
     }
     .nested-article {
@@ -641,20 +623,12 @@ textarea {
     .badge-volunteers__caption {
         font-size: 1.4em;
     }
-    .gallery__little-icon {
-        box-shadow: -0.1em 0.1em 0.4em black;
-        width: 100%;
-        background-size: cover;
-    }
+
     .gallery__nested-item_margin-s {
-        margin: auto;
         margin-top: 80px;
         margin-bottom: 80px;
     }
     .four-picture {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
     }
     .smoll-picture {
@@ -664,7 +638,6 @@ textarea {
         font-size: 0.6em;
     }
     .heart-block__position-wrapper {
-        display: flex;
         flex-direction: row;
     }
     .button_size-heart {
@@ -675,7 +648,7 @@ textarea {
     }
 }
 
-@media (min-width:601px) and (max-width:700px) {
+@media (min-width:600px) {
     .main-container__submenu i {
         font-size: 4em;
     }
@@ -710,31 +683,18 @@ textarea {
     .button_size-donation {
         width: 50%;
     }
-    .button__position-wrapper {
-        padding: 0.5em;
-    }
-    .donation__block_position {
-        margin: 5px;
-    }
+   
     .contribution__position-wrapper {
         display: flex;
     }
-    .statistics {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .indicators {
-        font-size: 1.2em;
-    }
+    
     .statistics {
         background-position-y: 30%;
     }
     .heading {
         font-size: 1.8em;
     }
-    .foreword {
-        font-size: 1.4em;
-    }
+
     .gallery__nested-item_margin-l {
         margin-top: 180px;
         margin-bottom: 180px;
@@ -753,7 +713,6 @@ textarea {
         margin-bottom: 60px;
     }
     .gallery-volunteers {
-        flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
         width: 90%;
@@ -763,8 +722,6 @@ textarea {
     }
     .four-picture, .two-picture, .three-picture {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
     }
     .smoll-picture {
@@ -790,13 +747,8 @@ textarea {
     }
     .smoll-icon {
         width: 4%;
-        font-size: 0.6em;
-        padding: 3% 2%;
     }
-    .heart-block__position-wrapper {
-        display: flex;
-        flex-direction: row;
-    }
+
     .button_size-heart {
         width: 30%
     }
@@ -819,9 +771,12 @@ textarea {
     .box-address {
         width: 50%;
     }
+    .social__position-wrapper {
+        width:25%;
+    }
 }
 
-@media (min-width:701px) and (max-width:767px) {
+@media (min-width:700px)  {
     .main-container__submenu i {
         font-size: 4.2em;
     }
@@ -855,12 +810,7 @@ textarea {
     .button_size-donation {
         width: 45%;
     }
-    .button__position-wrapper {
-        padding: 0.5em;
-    }
-    .donation__block_position {
-        margin: 7px;
-    }
+    
     .contribution__position-wrapper {
         display: flex;
     }
@@ -873,9 +823,7 @@ textarea {
     .mission__block h3 {
         font-size: 1.5em;
     }
-    .mission__block p {
-        font-size: 0.8em;
-    }
+ 
     .button_size-mission {
         width: 30%;
     }
@@ -887,15 +835,8 @@ textarea {
     }
     .mission__images img {
         width: 90%;
-        box-shadow: -0.3em 0.3em 0.5em black;
     }
-    .statistics {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .indicators {
-        font-size: 1.2em;
-    }
+   
     .statistics {
         background-position-y: 20%;
     }
@@ -905,13 +846,7 @@ textarea {
     .foreword {
         font-size: 1.6em;
     }
-    .nested-title {
-        text-align: center;
-        font-size: 2.2em;
-    }
-    .nested-article {
-        font-size: 1.6em;
-    }
+ 
     .gallery__nested-item_margin-s {
         margin-top: 120px;
         margin-bottom: 120px;
@@ -923,38 +858,16 @@ textarea {
         margin-top: 200px;
         margin-bottom: 200px;
     }
-    .nested-title {
-        font-size: 1.6em;
-    }
-    .nested-article {
-        font-size: 1.4em;
-    }
-    .gallery__little-icon {
-        width: 45%;
-    }
+
     .gallery__nested-item_margin-s {
-        margin: auto;
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    .badge-volunteers__caption {
-        font-size: 1.4em;
-    }
-    .gallery-volunteers {
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        width: 90%;
-    }
+  
     .badge-volunteers {
         width: 40%;
     }
-    .four-picture, .two-picture, .three-picture {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
+    
     .smoll-picture {
         width: 25%;
     }
@@ -985,40 +898,13 @@ textarea {
     .donation__block_position {
         margin: 16px;
     }
-    .smoll-icon {
-        width: 4%;
-        font-size: 0.6em;
-        padding: 3% 2%;
-    }
-    .heart-block__position-wrapper {
-        display: flex;
-        flex-direction: row;
-    }
-    .button_size-heart {
-        width: 30%
-    }
+
     .heart-image img {
         width: 60%;
     }
-    .appellation {
-        font-size: 1.2em;
-    }
-    .paragraph {
-        font-size: 1em;
-    }
-    .box-wrapper {
-        margin: 20px;
-        flex-direction: row;
-    }
-    .box-form {
-        width: 50%;
-    }
-    .box-address {
-        width: 50%;
-    }
 }
 
-@media (min-width:768px) and (max-width:900px) {
+@media (min-width:768px)  {
     .main-container__submenu i {
         display: none;
     }
@@ -1028,12 +914,7 @@ textarea {
     .logo__oblige {
         font-size: 2em;
     }
-    .logo__charity-fund {
-        font-size: 1.2em;
-    }
-    .main-container__title {
-        font-size: 1.9em;
-    }
+
     .main-container__header-h2 {
         font-size: 1.5em;
     }
@@ -1045,63 +926,27 @@ textarea {
     }
     .btn {
         font-size: 1em;
+    }
+    .main-container__btn {
         margin: 30px 0 70px 30px;
     }
-    .designation {
-        font-size: 1.1em;
-    }
-    .donation__block p {
-        font-size: 0.8em;
-    }
-    .button {
-        font-size: 0.7em;
-    }
-    .button_size-donation {
-        width: 45%;
-    }
-    .button__position-wrapper {
-        padding: 0.5em;
-    }
-    .donation__block_position {
-        margin: 10px;
-    }
+    
     .contribution__position-wrapper {
         display: flex;
     }
     .mission__position-wrapper {
         flex-direction: row;
     }
-    .mission__block {
-        width: 60%;
-    }
+  
     .mission__block h3 {
         font-size: 1.5em;
     }
     .mission__block p {
         font-size: 0.9em;
     }
-    .button_size-mission {
-        width: 30%;
-    }
+  
     .button_position {
         margin: 15px 20px;
-    }
-    .mission__images {
-        width: 30%;
-    }
-    .mission__images img {
-        width: 90%;
-        box-shadow: -0.3em 0.3em 0.5em black;
-    }
-    .statistics {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .indicators {
-        font-size: 1.2em;
-    }
-    .statistics {
-        background-position-y: 20%;
     }
     .heading {
         font-size: 1.5em;
@@ -1110,8 +955,6 @@ textarea {
         font-size: 0.9em;
     }
     .gallery {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-evenly;
     }
     .gallery__big-photo {
@@ -1119,7 +962,6 @@ textarea {
         margin: 10px;
     }
     .gallery__nested-item_margin-l {
-        margin: auto;
         margin-top: 100px;
         margin-bottom: 100px;
     }
@@ -1133,34 +975,21 @@ textarea {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .gallery__little-icon {
-        width: 45%;
-    }
+
     .gallery__little-photo {
-        display: flex;
-        flex-wrap: wrap;
         width: 60%;
         margin-top: 0;
-        justify-content: center;
     }
     .gallery-volunteers {
-        flex-wrap: wrap;
-        flex-direction: row;
         justify-content: space-between;
-        width: 90%;
     }
     .badge-volunteers {
         width: 20%;
     }
-    .fab {
+     .fab {
         font-size: 0.7em;
-    }
-    .four-picture, .two-picture, .three-picture {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
+    } 
+ 
     .smoll-picture {
         width: 25%;
     }
@@ -1179,20 +1008,9 @@ textarea {
     .donation_reverse {
         flex-direction: row-reverse;
     }
-    .donation__block_position {
-        margin: 16px;
-    }
+   
     .smoll-icon {
         width: 3%;
-        font-size: 0.6em;
-        padding: 3% 2%;
-    }
-    .heart-block__position-wrapper {
-        display: flex;
-        flex-direction: row;
-    }
-    .button_size-heart {
-        width: 30%
     }
     .heart-image img {
         width: 50%;
@@ -1203,34 +1021,12 @@ textarea {
     .paragraph {
         font-size: 0.9em;
     }
-    .box-wrapper {
-        margin: 20px;
-        flex-direction: row;
-    }
-    .box-form {
-        width: 50%;
-    }
-    .box-address {
-        width: 50%;
-    }
-    .button-submit_font {
-        font-size:1em;
+    .social__position-wrapper {
+        width:20%;
     }
 }
 
-@media (min-width:901px) and (max-width:1023px) {
-    .main-container__submenu i {
-        display: none;
-    }
-    .main-container__nav {
-        display: block;
-    }
-    .logo__oblige {
-        font-size: 2em;
-    }
-    .logo__charity-fund {
-        font-size: 1.2em;
-    }
+@media (min-width:900px)  {
     .main-container__title {
         font-size: 2.4em;
         margin: 70px 0 0 60px;
@@ -1245,6 +1041,8 @@ textarea {
     }
     .btn {
         font-size: 1.1em;
+    }
+    .main-container__btn {
         margin: 30px 0 80px 60px;
     }
     .designation {
@@ -1256,12 +1054,6 @@ textarea {
     .button {
         font-size: 0.8em;
     }
-    .button_size-donation {
-        width: 45%;
-    }
-    .donation__block_position {
-        margin: 10px;
-    }
     .contribution__position-wrapper {
         display: flex;
     }
@@ -1269,7 +1061,6 @@ textarea {
         flex-direction: row;
     }
     .mission__block {
-        width: 60%;
         padding-left: 40px;
     }
     .mission__block h3 {
@@ -1284,40 +1075,13 @@ textarea {
     .button_position {
         margin: 15px 20px;
     }
-    .mission__images {
-        width: 30%;
-    }
-    .mission__images img {
-        width: 90%;
-        box-shadow: -0.3em 0.3em 0.5em black;
-    }
-    .statistics {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .indicators {
-        font-size: 1.2em;
-    }
-    .statistics {
-        background-position-y: 20%;
-    }
     .heading {
         font-size: 2.2em;
     }
     .foreword {
         font-size: 1.6em;
     }
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .gallery__big-photo {
-        width: 35%;
-        margin: 10px;
-    }
     .gallery__nested-item_margin-l {
-        margin: auto;
         margin-top: 150px;
         margin-bottom: 130px;
     }
@@ -1327,34 +1091,11 @@ textarea {
     .nested-article {
         font-size: 0.8em;
     }
-    .gallery__little-photo {
-        display: flex;
-        flex-wrap: wrap;
-        width: 60%;
-        margin-top: 0;
-        justify-content: center;
-    }
-    .gallery__little-icon {
-        width: 45%;
-    }
-    .gallery-volunteers {
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-    }
+  
     .badge-volunteers {
         width: 20%;
     }
-    .fab {
-        font-size: 0.7em;
-    }
-    .four-picture, .two-picture, .three-picture {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
+ 
     .smoll-picture {
         width: 25%;
     }
@@ -1385,71 +1126,18 @@ textarea {
     .donation__block_position {
         margin: 18px;
     }
-    .smoll-icon {
-        width: 3%;
-        font-size: 0.6em;
-        padding: 3% 2%;
-    }
-    .heart-block__position-wrapper {
-        display: flex;
-        flex-direction: row;
-    }
-    .button_size-heart {
-        width: 30%
-    }
-    .heart-image img {
-        width: 50%;
-    }
     .appellation {
         font-size: 1.2em;
     }
     .paragraph {
         font-size: 1em;
     }
-    .box-wrapper {
-        margin: 20px;
-        flex-direction: row;
-    }
-    .box-form {
-        width: 50%;
-    }
-    .box-address {
-        width: 50%;
-    }
     .button-submit_font {
         font-size:1.1em;
     }
 }
 
-@media (min-width:1024px) and (max-width:1200px) {
-    .main-container__submenu i {
-        display: none;
-    }
-    .main-container__nav {
-        display: block;
-    }
-    .logo__oblige {
-        font-size: 2em;
-    }
-    .logo__charity-fund {
-        font-size: 1.2em;
-    }
-    .main-container__title {
-        font-size: 2.4em;
-        margin: 70px 0 0 60px;
-    }
-    .main-container__header-h2 {
-        font-size: 1.4em;
-        margin: 0px 0 20px 60px;
-    }
-    .main-container__sentence {
-        font-size: 1.1em;
-        margin: 0px 0 0 60px;
-    }
-    .btn {
-        font-size: 1.1em;
-        margin: 30px 0 80px 60px;
-    }
+@media (min-width:1024px) {
     .contribution__position-wrapper {
         display: flex;
     }
@@ -1462,21 +1150,11 @@ textarea {
     .button {
         font-size: 0.9em;
     }
-    .button_size-donation {
-        width: 45%;
-    }
-    .donation__block_position {
-        margin: 15px;
-    }
     .contribution__position-wrapper {
         display: flex;
     }
     .mission__position-wrapper {
         flex-direction: row;
-    }
-    .mission__block {
-        width: 60%;
-        padding-left: 40px;
     }
     .mission__block h3 {
         font-size: 2em;
@@ -1484,46 +1162,16 @@ textarea {
     .mission__block p {
         font-size: 1.2em;
     }
-    .button_size-mission {
-        width: 20%;
-    }
     .button_position {
         margin: 15px 20px;
     }
-    .mission__images {
-        width: 30%;
-    }
     .mission__images img {
         width: 80%;
-        box-shadow: -0.3em 0.3em 0.5em black;
-    }
-    .statistics {
-        flex-direction: row;
-        justify-content: space-evenly;
     }
     .indicators {
         font-size: 1.5em;
     }
-    .statistics {
-        background-position-y: 20%;
-    }
-    .heading {
-        font-size: 2.2em;
-    }
-    .foreword {
-        font-size: 1.6em;
-    }
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .gallery__big-photo {
-        width: 35%;
-        margin: 10px;
-    }
     .gallery__nested-item_margin-l {
-        margin: auto;
         margin-top: 130px;
         margin-bottom: 130px;
     }
@@ -1533,37 +1181,12 @@ textarea {
     .nested-article {
         font-size: 1em;
     }
-    .gallery__little-photo {
-        display: flex;
-        flex-wrap: wrap;
-        width: 60%;
-        margin-top: 0;
-        justify-content: center;
-    }
     .gallery__nested-item_margin-s {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    .gallery__little-icon {
-        width: 45%;
-    }
-    .gallery-volunteers {
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-    }
     .badge-volunteers {
         width: 20%;
-    }
-    .fab {
-        font-size: 0.7em;
-    }
-    .four-picture, .two-picture, .three-picture {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
     }
     .smoll-picture {
         width: 25%;
@@ -1589,63 +1212,37 @@ textarea {
     .donation_reverse {
         flex-direction: row-reverse;
     }
-    .donation__block_position {
-        margin: 18px;
-    }
-    .smoll-icon {
-        width: 3%;
-        font-size: 0.6em;
-        padding: 3% 2%;
-    }
-    .heart-block__position-wrapper {
-        display: flex;
-        flex-direction: row;
-    }
+
     .button_size-heart {
         width: 20%
     }
-    .heart-image img {
-        width: 50%;
-    }
+ 
     .appellation {
         font-size: 1.4em;
     }
     .paragraph {
         font-size: 1.2em;
     }
-    .box-wrapper {
-        margin: 20px;
-        flex-direction: row;
-    }
-    .box-form {
-        width: 50%;
-    }
-    .box-address {
-        width: 50%;
-    }
+ 
     .button-submit_font {
         font-size:1.2em;
     }
-    .empty-block {
-        height: 150px;
+    .empty-block__content{
+        height:120px;
+        margin: 5px;
     }
+    .social__position-wrapper {
+        width:15%;
+    }
+    
 }
 
-@media (min-width:1201px) and (max-width:1440px) {
-    .main-container__submenu i {
-        display: none;
-    }
-    .main-container__nav {
-        display: block;
-    }
+@media (min-width:1200px) {
     .nav__link {
         font-size: 1.5em;
     }
     .logo__oblige {
         font-size: 2.2em;
-    }
-    .logo__charity-fund {
-        font-size: 1.2em;
     }
     .main-container__title {
         font-size: 3em;
@@ -1661,8 +1258,10 @@ textarea {
     }
     .btn {
         font-size: 1.2em;
-        margin: 30px 0 80px 75px;
         width: 15%;
+    }
+    .main-container__btn {
+        margin: 30px 0 80px 75px;
     }
     .designation {
         font-size: 1.4em;
@@ -1676,47 +1275,25 @@ textarea {
     .button_size-donation {
         width: 40%;
     }
-    .donation__block_position {
-        margin: 15px;
-    }
+ 
     .contribution__position-wrapper {
         display: flex;
     }
     .mission__position-wrapper {
         flex-direction: row;
     }
-    .mission__block {
-        width: 60%;
-        padding-left: 40px;
-    }
+    
     .mission__block h3 {
         font-size: 3em;
     }
     .mission__block p {
         font-size: 1.4em;
     }
-    .button_size-mission {
-        width: 20%;
-    }
     .button_position {
         margin: 15px 20px;
     }
-    .mission__images {
-        width: 30%;
-    }
-    .mission__images img {
-        width: 80%;
-        box-shadow: -0.3em 0.3em 0.5em black;
-    }
-    .statistics {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
     .indicators {
         font-size: 1.6em;
-    }
-    .statistics {
-        background-position-y: 20%;
     }
     .heading {
         font-size: 3em;
@@ -1724,17 +1301,7 @@ textarea {
     .foreword {
         font-size: 2.4em;
     }
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .gallery__big-photo {
-        width: 35%;
-        margin: 10px;
-    }
     .gallery__nested-item_margin-l {
-        margin: auto;
         margin-top: 150px;
         margin-bottom: 150px;
     }
@@ -1744,37 +1311,11 @@ textarea {
     .nested-article {
         font-size: 1.2em;
     }
-    .gallery__little-photo {
-        display: flex;
-        flex-wrap: wrap;
-        width: 60%;
-        margin-top: 0;
-        justify-content: center;
-    }
-    .gallery__nested-item_margin-s {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    .gallery__little-icon {
-        width: 45%;
-    }
-    .gallery-volunteers {
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-    }
     .badge-volunteers {
         width: 20%;
     }
     .fab {
         font-size: 0.9em;
-    }
-    .four-picture, .two-picture, .three-picture {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
     }
     .smoll-picture {
         width: 25%;
@@ -1804,19 +1345,7 @@ textarea {
         margin: 20px;
     }
     .smoll-icon {
-        width: 3%;
         font-size: 0.8em;
-        padding: 3% 2%;
-    }
-    .heart-block__position-wrapper {
-        display: flex;
-        flex-direction: row;
-    }
-    .button_size-heart {
-        width: 20%
-    }
-    .heart-image img {
-        width: 50%;
     }
     .appellation {
         font-size: 1.6em;
@@ -1826,13 +1355,6 @@ textarea {
     }
     .box-wrapper {
         margin: 50px;
-        flex-direction: row;
-    }
-    .box-form {
-        width: 50%;
-    }
-    .box-address {
-        width: 50%;
     }
     .box-address h2 {
         font-size: 2em;
@@ -1846,18 +1368,10 @@ textarea {
     input, textarea {
         font-size: 1.4em;
     }
-    .empty-block {
-        height: 200px;
-    }
+    
 }
 
-@media (min-width:1441px) and (max-width:1600px) {
-    .main-container__submenu i {
-        display: none;
-    }
-    .main-container__nav {
-        display: block;
-    }
+@media (min-width:1440px) {
     .nav__link {
         font-size: 1.6em;
     }
@@ -1874,15 +1388,12 @@ textarea {
     }
     .main-container__header-h2 {
         font-size: 2em;
-        margin: 0 0 20px 75px;
     }
     .main-container__sentence {
         font-size: 1.4em;
-        margin: 0px 0 0 75px;
     }
     .btn {
         font-size: 1.4em;
-        margin: 30px 0 80px 75px;
         width: 10%;
     }
     .designation {
@@ -1894,12 +1405,7 @@ textarea {
     .button {
         font-size: 1.3em;
     }
-    .button_size-donation {
-        width: 40%;
-    }
-    .donation__block_position {
-        margin: 20px;
-    }
+
     .contribution__position-wrapper {
         display: flex;
     }
@@ -1907,7 +1413,6 @@ textarea {
         flex-direction: row;
     }
     .mission__block {
-        width: 60%;
         padding-left: 55px;
     }
     .mission__block h3 {
@@ -1916,28 +1421,9 @@ textarea {
     .mission__block p {
         font-size: 1.6em;
     }
-    .button_size-mission {
-        width: 20%;
-    }
+    
     .button_position {
         margin: 15px 20px;
-    }
-    .mission__images {
-        width: 30%;
-    }
-    .mission__images img {
-        width: 80%;
-        box-shadow: -0.3em 0.3em 0.5em black;
-    }
-    .statistics {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .indicators {
-        font-size: 1.6em;
-    }
-    .statistics {
-        background-position-y: 20%;
     }
     .heading {
         font-size: 3.7em;
@@ -1945,17 +1431,7 @@ textarea {
     .foreword {
         font-size: 2.2em;
     }
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .gallery__big-photo {
-        width: 35%;
-        margin: 10px;
-    }
     .gallery__nested-item_margin-l {
-        margin: auto;
         margin-top: 180px;
         margin-bottom: 180px;
     }
@@ -1965,40 +1441,15 @@ textarea {
     .nested-article {
         font-size: 1.4em;
     }
-    .gallery__little-photo {
-        display: flex;
-        flex-wrap: wrap;
-        width: 60%;
-        margin-top: 0;
-        justify-content: center;
-    }
     .gallery__nested-item_margin-s {
         margin-top: 80px;
         margin-bottom: 80px;
-    }
-    .gallery__little-icon {
-        width: 45%;
-    }
-    .badge-volunteers__caption {
-        font-size: 1.4em;
-    }
-    .gallery-volunteers {
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
     }
     .badge-volunteers {
         width: 20%;
     }
     .fab {
         font-size: 1.1em;
-    }
-    .four-picture, .two-picture, .three-picture {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
     }
     .smoll-picture {
         width: 25%;
@@ -2028,19 +1479,10 @@ textarea {
         margin: 25px;
     }
     .smoll-icon {
-        width: 3%;
         font-size: 1em;
-        padding: 3% 2%;
-    }
-    .heart-block__position-wrapper {
-        display: flex;
-        flex-direction: row;
     }
     .button_size-heart {
         width: 25%
-    }
-    .heart-image img {
-        width: 50%;
     }
     .appellation {
         font-size: 2em;
@@ -2048,21 +1490,8 @@ textarea {
     .paragraph {
         font-size: 1.4em;
     }
-    .box-wrapper {
-        margin: 50px;
-        flex-direction: row;
-    }
-    .box-form {
-        width: 50%;
-    }
-    .box-address {
-        width: 50%;
-    }
     .box-address h2 {
         font-size: 1.8em;
-    }
-    .box-address__sentence {
-        font-size: 1.4em;
     }
     .box-address__paragraph {
         font-size: 1.2em;
@@ -2073,18 +1502,15 @@ textarea {
     .button-submit_font {
         font-size:1.4em;
     }
-    .empty-block {
-        height: 200px;
+    .social__position-wrapper {
+        width:10%;
+    }
+    .empty-block__content{
+        height:150px;
     }
 }
 
-@media (min-width:1601px) {
-    .main-container__submenu i {
-        display: none;
-    }
-    .main-container__nav {
-        display: block;
-    }
+@media (min-width:1600px) {
     .nav__link {
         font-size: 2em;
     }
@@ -2102,16 +1528,15 @@ textarea {
     }
     .main-container__header-h2 {
         font-size: 2.3em;
-        margin: 0 0 20px 75px;
     }
     .main-container__sentence {
         font-size: 1.6em;
-        margin: 0px 0 0 75px;
     }
     .btn {
         font-size: 1.6em;
+    }
+    .main-container__btn {
         margin: 30px 0 110px 75px;
-        width: 10%;
     }
     .designation {
         font-size: 1.8em;
@@ -2122,21 +1547,12 @@ textarea {
     .button {
         font-size: 1.4em;
     }
-    .button_size-donation {
-        width: 40%;
-    }
-    .donation__block_position {
-        margin: 25px;
-    }
+
     .contribution__position-wrapper {
         display: flex;
     }
     .mission__position-wrapper {
         flex-direction: row;
-    }
-    .mission__block {
-        width: 60%;
-        padding-left: 55px;
     }
     .mission__block h3 {
         font-size: 4.2em;
@@ -2144,89 +1560,34 @@ textarea {
     .mission__block p {
         font-size: 2em;
     }
-    .button_size-mission {
-        width: 20%;
-    }
+
     .button_position {
         margin: 15px 20px;
     }
-    .mission__images {
-        width: 30%;
-    }
     .mission__images img {
         width: 90%;
-        box-shadow: -0.3em 0.3em 0.5em black;
-    }
-    .statistics {
-        flex-direction: row;
-        justify-content: space-evenly;
     }
     .indicators {
         font-size: 2.4em;
     }
-    .statistics {
-        background-position-y: 20%;
-    }
     .heading {
         font-size: 4.2em;
     }
-    .foreword {
-        font-size: 2.2em;
-    }
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .gallery__big-photo {
-        width: 35%;
-        margin: 10px;
-    }
-    .gallery__nested-item_margin-l {
-        margin: auto;
-        margin-top: 180px;
-        margin-bottom: 180px;
-    }
     .nested-title {
         font-size: 2em;
-    }
-    .nested-article {
-        font-size: 1.4em;
-    }
-    .gallery__little-photo {
-        display: flex;
-        flex-wrap: wrap;
-        width: 60%;
-        margin-top: 0;
-        justify-content: center;
     }
     .gallery__nested-item_margin-s {
         margin-top: 60px;
         margin-bottom: 60px;
     }
-    .gallery__little-icon {
-        width: 45%;
-    }
     .badge-volunteers__caption {
         font-size: 1.5em;
-    }
-    .gallery-volunteers {
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
     }
     .badge-volunteers {
         width: 20%;
     }
     .fab {
         font-size: 1.2em;
-    }
-    .four-picture, .two-picture, .three-picture {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
     }
     .smoll-picture {
         width: 25%;
@@ -2256,19 +1617,7 @@ textarea {
         margin: 35px;
     }
     .smoll-icon {
-        width: 3%;
         font-size: 1.2em;
-        padding: 3% 2%;
-    }
-    .heart-block__position-wrapper {
-        display: flex;
-        flex-direction: row;
-    }
-    .button_size-heart {
-        width: 25%
-    }
-    .heart-image img {
-        width: 50%;
     }
     .appellation {
         font-size: 2.2em;
@@ -2277,14 +1626,7 @@ textarea {
         font-size: 1.6em;
     }
     .box-wrapper {
-        margin: 50px;
-        flex-direction: row;
-    }
-    .box-form {
-        width: 50%;
-    }
-    .box-address {
-        width: 50%;
+        margin-left: 100px;
     }
     .box-address h2 {
         font-size: 2em;
@@ -2295,13 +1637,8 @@ textarea {
     .box-address__paragraph {
         font-size: 1.4em;
     }
-    input, textarea {
-        font-size: 1.6em;
+    .empty-block__content{
+        height:180px;
     }
-    .button-submit_font {
-        font-size:1.4em;
-    }
-    .empty-block {
-        height: 250px;
-    }
+    
 }
